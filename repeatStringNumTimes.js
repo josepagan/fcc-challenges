@@ -1,10 +1,10 @@
-
 function repeatStringNumTimes(str, num) {
-  // repeat after me
-  for (var n=1;n<num;n++){
-    str = str + str
-  }
- return str
+    // repeat after me
+    var total = "";
+    for (var n = 0; n < num; n++) {
+        total = total + str;
+    }
+    return total;
 }
 
-console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes("abc", -2));
