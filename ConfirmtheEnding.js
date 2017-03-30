@@ -5,4 +5,5 @@ function confirmEnding(str, target) {
   return str.substr(str.length - target.length) == target;
 }
 
-console.log(confirmEnding("Bastian", "n"));
+confirmEnding("Bastian", "n");
+console.log(0.1+0.2);
