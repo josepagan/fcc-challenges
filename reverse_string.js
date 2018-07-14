@@ -19,4 +19,14 @@ function reverseString(str) {
   return rejoined;
 }
 
+
+//Alternative version  without using reverse array method. Instead using map with value and index arguments. Just for fun.
+function reverseStringAlt(str) {
+  let array = str.split('');
+  let mappedArray = array.map((value,index)=>array[array.length - 1 - index])
+  return mappedArray.join('')
+}
+
+console.log(reverseString("hello"));
+
 reverseString("hello")
