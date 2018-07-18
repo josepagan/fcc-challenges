@@ -10,4 +10,12 @@ function findLongestWord(str) {
     return max.length
 }
 
+
+//much shorter version first mappig into lenghts and then returning the max value.
+function findLongestWordLength(str) {
+  let array = str.split(' ').map(value=>value.length);
+  return Math.max(...array);
+
+}
+
 console.log(findLongestWord("The quick brown fox jumped over the lazy dog"))
