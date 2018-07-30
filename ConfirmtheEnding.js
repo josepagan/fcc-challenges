@@ -1,9 +1,10 @@
-function confirmEnding(str, target) {
-  // "Never give up and good luck will find you."
-  // -- Falcor
-
-  return str.substr(str.length - target.length) == target;
+function repeatStringNumTimes(str, num) {
+  // repeat after me
+  let resultString = "";
+  for (let i=0;i<num;i++){
+    resultString += str
+  }
+  return resultString
 }
 
-confirmEnding("Bastian", "n");
-console.log(0.1+0.2);
+console.log(repeatStringNumTimes("abc", 0));

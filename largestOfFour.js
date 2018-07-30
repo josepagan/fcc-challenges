@@ -10,6 +10,11 @@ function largestOfFour(arr) {
     });
     return max;
 }
+//much simpler version just with math max and map, and arrow functions.
+function largestOfFour(arr) {
+  // You can do this!
+  return arr.map(innerArr=>Math.max(...innerArr));
+}
 
 
 largestOfFour([

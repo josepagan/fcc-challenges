@@ -11,4 +11,17 @@ function truncateString(str, num) {
   }
 }
 
+//revisiting old exercises... this function is too conplicated.
+//newer is much simpler... just i use substr and if it matches the original i leave it
+// if it doesnt I just add '...'
+
+function truncateStringNew(str, num) {
+  // Clear out that junk in your trunk
+  let x = str.substr(0,num);
+  if (x!==str){
+    x += "..."
+  }
+  return x
+}
+
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", 100));
